@@ -1,0 +1,15 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Bridging Header
+SWIFT_OBJC_BRIDGING_HEADER = realingo_v3/VLM/realingo_v3-Bridging-Header.h
+
+// Framework Search Paths
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR) $(PROJECT_DIR)/realingo_v3/Frameworks
+
+// Linking
+OTHER_LDFLAGS = $(inherited) -framework llama
+
+// C++ Settings
+CLANG_CXX_LANGUAGE_STANDARD = gnu++17
+CLANG_CXX_LIBRARY = libc++

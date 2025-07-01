@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FE1C4488B6146569BFF24E7 /* VLM/VLMWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5A4F06ECED44FFCB2578975 /* VLM/VLMWrapper.mm */; };
+		A33988672E1093E400EA8910 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A33988662E1093E400EA8910 /* FirebaseAuth */; };
+		A35EAFAB2E0FBB4800B995A4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9D2E0FBB4800B995A4 /* Models.swift */; };
+		A35EAFAC2E0FBB4800B995A4 /* ResearchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA32E0FBB4800B995A4 /* ResearchSettingsView.swift */; };
+		A35EAFAD2E0FBB4800B995A4 /* UsageTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA72E0FBB4800B995A4 /* UsageTimeTracker.swift */; };
+		A35EAFAE2E0FBB4800B995A4 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9F2E0FBB4800B995A4 /* PhotoFetcher.swift */; };
+		A35EAFAF2E0FBB4800B995A4 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9C2E0FBB4800B995A4 /* MainMenuView.swift */; };
+		A35EAFB02E0FBB4800B995A4 /* SpeakingPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA52E0FBB4800B995A4 /* SpeakingPracticeView.swift */; };
+		A35EAFB12E0FBB4800B995A4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9E2E0FBB4800B995A4 /* Persistence.swift */; };
+		A35EAFB22E0FBB4800B995A4 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA42E0FBB4800B995A4 /* ServiceManager.swift */; };
+		A35EAFB32E0FBB4800B995A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF992E0FBB4800B995A4 /* ContentView.swift */; };
+		A35EAFB42E0FBB4800B995A4 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9B2E0FBB4800B995A4 /* LanguageSelectionView.swift */; };
+		A35EAFB52E0FBB4800B995A4 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA02E0FBB4800B995A4 /* Quiz.swift */; };
+		A35EAFB62E0FBB4800B995A4 /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA62E0FBB4800B995A4 /* SpeechRecognitionManager.swift */; };
+		A35EAFB72E0FBB4800B995A4 /* realingo_v3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA12E0FBB4800B995A4 /* realingo_v3.xcdatamodeld */; };
+		A35EAFB82E0FBB4800B995A4 /* WrapLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA82E0FBB4800B995A4 /* WrapLayoutView.swift */; };
+		A35EAFB92E0FBB4800B995A4 /* realingo_v3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA22E0FBB4800B995A4 /* realingo_v3App.swift */; };
+		A35EAFBA2E0FBB4800B995A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF9A2E0FBB4800B995A4 /* GoogleService-Info.plist */; };
+		A35EAFBB2E0FBB4800B995A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF962E0FBB4800B995A4 /* Preview Assets.xcassets */; };
+		A35EAFBC2E0FBB4800B995A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF982E0FBB4800B995A4 /* Assets.xcassets */; };
+		A35EAFCF2E0FBB4800B995A4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9D2E0FBB4800B995A4 /* Models.swift */; };
+		A35EAFD02E0FBB4800B995A4 /* ResearchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA32E0FBB4800B995A4 /* ResearchSettingsView.swift */; };
+		A35EAFD12E0FBB4800B995A4 /* UsageTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA72E0FBB4800B995A4 /* UsageTimeTracker.swift */; };
+		A35EAFD22E0FBB4800B995A4 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9F2E0FBB4800B995A4 /* PhotoFetcher.swift */; };
+		A35EAFD32E0FBB4800B995A4 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9C2E0FBB4800B995A4 /* MainMenuView.swift */; };
+		A35EAFD42E0FBB4800B995A4 /* SpeakingPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA52E0FBB4800B995A4 /* SpeakingPracticeView.swift */; };
+		A35EAFD52E0FBB4800B995A4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9E2E0FBB4800B995A4 /* Persistence.swift */; };
+		A35EAFD62E0FBB4800B995A4 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA42E0FBB4800B995A4 /* ServiceManager.swift */; };
+		A35EAFD72E0FBB4800B995A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF992E0FBB4800B995A4 /* ContentView.swift */; };
+		A35EAFD82E0FBB4800B995A4 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF9B2E0FBB4800B995A4 /* LanguageSelectionView.swift */; };
+		A35EAFD92E0FBB4800B995A4 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA02E0FBB4800B995A4 /* Quiz.swift */; };
+		A35EAFDA2E0FBB4800B995A4 /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA62E0FBB4800B995A4 /* SpeechRecognitionManager.swift */; };
+		A35EAFDB2E0FBB4800B995A4 /* realingo_v3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA12E0FBB4800B995A4 /* realingo_v3.xcdatamodeld */; };
+		A35EAFDC2E0FBB4800B995A4 /* WrapLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA82E0FBB4800B995A4 /* WrapLayoutView.swift */; };
+		A35EAFDD2E0FBB4800B995A4 /* realingo_v3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAFA22E0FBB4800B995A4 /* realingo_v3App.swift */; };
+		A35EAFDE2E0FBB4800B995A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF9A2E0FBB4800B995A4 /* GoogleService-Info.plist */; };
+		A35EAFDF2E0FBB4800B995A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF962E0FBB4800B995A4 /* Preview Assets.xcassets */; };
+		A35EAFE02E0FBB4800B995A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF982E0FBB4800B995A4 /* Assets.xcassets */; };
+		A36BE0082E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36BE0072E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework */; };
+		A36BE0092E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A36BE0072E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A36BE0102E125424008B0498 /* realingo_v3.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A36BE00F2E125424008B0498 /* realingo_v3.xcconfig */; };
+		A38754262D7E0CA100F7E1C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A38754252D7E0CA100F7E1C8 /* FirebaseAnalytics */; };
+		A38754282D7E0CA100F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A38754272D7E0CA100F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */; };
+		A387542A2D7E0CA100F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A38754292D7E0CA100F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		A387542C2D7E0CA100F7E1C8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A387542B2D7E0CA100F7E1C8 /* FirebaseAppCheck */; };
+		A387542E2D7E0CA100F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A387542D2D7E0CA100F7E1C8 /* FirebaseAppDistribution-Beta */; };
+		A38754302D7E0F1F00F7E1C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A387542F2D7E0F1F00F7E1C8 /* FirebaseAnalytics */; };
+		A38754322D7E0F1F00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A38754312D7E0F1F00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */; };
+		A38754342D7E0F1F00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A38754332D7E0F1F00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		A38754362D7E0F1F00F7E1C8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A38754352D7E0F1F00F7E1C8 /* FirebaseAppCheck */; };
+		A38754382D7E0F1F00F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A38754372D7E0F1F00F7E1C8 /* FirebaseAppDistribution-Beta */; };
+		A387543A2D7E0F3A00F7E1C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A38754392D7E0F3A00F7E1C8 /* FirebaseAnalytics */; };
+		A387543C2D7E0F3A00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A387543B2D7E0F3A00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */; };
+		A387543E2D7E0F3A00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A387543D2D7E0F3A00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		A38754402D7E0F3A00F7E1C8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A387543F2D7E0F3A00F7E1C8 /* FirebaseAppCheck */; };
+		A38754422D7E0F3A00F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A38754412D7E0F3A00F7E1C8 /* FirebaseAppDistribution-Beta */; };
+		A38754632D7F6C4200F7E1C8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A38754622D7F6C4200F7E1C8 /* FirebaseFirestore */; };
+		A38754652E1093E400EA8910 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A38754642E1093E400EA8910 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A38753FE2D7DDA9500F7E1C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38753E02D7DDA9200F7E1C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38753E72D7DDA9200F7E1C8;
+			remoteInfo = realingo_v3;
+		};
+		A38754082D7DDA9500F7E1C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38753E02D7DDA9200F7E1C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38753E72D7DDA9200F7E1C8;
+			remoteInfo = realingo_v3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A36BE00A2E1253A4008B0498 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A36BE0092E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		183146C9CF60464881B0B974 /* VLM/VLMWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLM/VLMWrapper.h; sourceTree = "<group>"; };
+		5D26B97733904A7B9D2D223B /* VLM/realingo_v3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLM/realingo_v3-Bridging-Header.h"; sourceTree = "<group>"; };
+		A35EAF962E0FBB4800B995A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A35EAF982E0FBB4800B995A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A35EAF992E0FBB4800B995A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A35EAF9A2E0FBB4800B995A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A35EAF9B2E0FBB4800B995A4 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		A35EAF9C2E0FBB4800B995A4 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		A35EAF9D2E0FBB4800B995A4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A35EAF9E2E0FBB4800B995A4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A35EAF9F2E0FBB4800B995A4 /* PhotoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFetcher.swift; sourceTree = "<group>"; };
+		A35EAFA02E0FBB4800B995A4 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		A35EAFA22E0FBB4800B995A4 /* realingo_v3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realingo_v3App.swift; sourceTree = "<group>"; };
+		A35EAFA32E0FBB4800B995A4 /* ResearchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchSettingsView.swift; sourceTree = "<group>"; };
+		A35EAFA42E0FBB4800B995A4 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		A35EAFA52E0FBB4800B995A4 /* SpeakingPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingPracticeView.swift; sourceTree = "<group>"; };
+		A35EAFA62E0FBB4800B995A4 /* SpeechRecognitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionManager.swift; sourceTree = "<group>"; };
+		A35EAFA72E0FBB4800B995A4 /* UsageTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageTimeTracker.swift; sourceTree = "<group>"; };
+		A35EAFA82E0FBB4800B995A4 /* WrapLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapLayoutView.swift; sourceTree = "<group>"; };
+		A35EAFAA2E0FBB4800B995A4 /* realingo_v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = realingo_v3.xcdatamodel; sourceTree = "<group>"; };
+		A36BE0072E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = realingo_v3/Frameworks/llama.xcframework; sourceTree = "<group>"; };
+		A36BE00F2E125424008B0498 /* realingo_v3.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = realingo_v3.xcconfig; sourceTree = "<group>"; };
+		A38753E82D7DDA9200F7E1C8 /* realingo_v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realingo_v3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38753FD2D7DDA9500F7E1C8 /* realingo_v3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realingo_v3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38754072D7DDA9500F7E1C8 /* realingo_v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realingo_v3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EDEFF42E10869D00A6574B /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		A3EDEFF52E10869D00A6574B /* APIKeySetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeySetupView.swift; sourceTree = "<group>"; };
+		A3EDEFF62E10869D00A6574B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A3EDEFF72E10869D00A6574B /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		A3EDEFF82E10869D00A6574B /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		D5A4F06ECED44FFCB2578975 /* VLM/VLMWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLM/VLMWrapper.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A3EDEFF32E10835C00A6574B /* Exceptions for "realingo_v3" folder in "realingo_v3" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				VLM/VLMWrapper.mm,
+			);
+			target = A38753E72D7DDA9200F7E1C8 /* realingo_v3 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A38753EA2D7DDA9200F7E1C8 /* realingo_v3 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A3EDEFF32E10835C00A6574B /* Exceptions for "realingo_v3" folder in "realingo_v3" target */,
+			);
+			path = realingo_v3;
+			sourceTree = "<group>";
+		};
+		A38754002D7DDA9500F7E1C8 /* realingo_v3Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = realingo_v3Tests;
+			sourceTree = "<group>";
+		};
+		A387540A2D7DDA9500F7E1C8 /* realingo_v3UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = realingo_v3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A38753E52D7DDA9200F7E1C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A387542C2D7E0CA100F7E1C8 /* FirebaseAppCheck in Frameworks */,
+				A38754262D7E0CA100F7E1C8 /* FirebaseAnalytics in Frameworks */,
+				A387542E2D7E0CA100F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */,
+				A387542A2D7E0CA100F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				A38754282D7E0CA100F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				A33988672E1093E400EA8910 /* FirebaseAuth in Frameworks */,
+				A38754632D7F6C4200F7E1C8 /* FirebaseFirestore in Frameworks */,
+				A38754652E1093E400EA8910 /* FirebaseStorage in Frameworks */,
+				A36BE0082E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38753FA2D7DDA9500F7E1C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38754362D7E0F1F00F7E1C8 /* FirebaseAppCheck in Frameworks */,
+				A38754302D7E0F1F00F7E1C8 /* FirebaseAnalytics in Frameworks */,
+				A38754382D7E0F1F00F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */,
+				A38754342D7E0F1F00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				A38754322D7E0F1F00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38754042D7DDA9500F7E1C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38754402D7E0F3A00F7E1C8 /* FirebaseAppCheck in Frameworks */,
+				A387543A2D7E0F3A00F7E1C8 /* FirebaseAnalytics in Frameworks */,
+				A38754422D7E0F3A00F7E1C8 /* FirebaseAppDistribution-Beta in Frameworks */,
+				A387543E2D7E0F3A00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				A387543C2D7E0F3A00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A33987B72E108CD800EA8910 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A3EDEFF42E10869D00A6574B /* APIKeyManager.swift */,
+				A3EDEFF72E10869D00A6574B /* ConsentView.swift */,
+				A3EDEFF82E10869D00A6574B /* ReviewView.swift */,
+				A3EDEFF52E10869D00A6574B /* APIKeySetupView.swift */,
+				A3EDEFF62E10869D00A6574B /* AuthManager.swift */,
+				A35EAF992E0FBB4800B995A4 /* ContentView.swift */,
+				A35EAF9B2E0FBB4800B995A4 /* LanguageSelectionView.swift */,
+				A35EAFA02E0FBB4800B995A4 /* Quiz.swift */,
+				A35EAFA62E0FBB4800B995A4 /* SpeechRecognitionManager.swift */,
+				A35EAFA12E0FBB4800B995A4 /* realingo_v3.xcdatamodeld */,
+				183146C9CF60464881B0B974 /* VLM/VLMWrapper.h */,
+				D5A4F06ECED44FFCB2578975 /* VLM/VLMWrapper.mm */,
+				5D26B97733904A7B9D2D223B /* VLM/realingo_v3-Bridging-Header.h */,
+				A35EAFA82E0FBB4800B995A4 /* WrapLayoutView.swift */,
+				A35EAFA22E0FBB4800B995A4 /* realingo_v3App.swift */,
+				A35EAF962E0FBB4800B995A4 /* Preview Assets.xcassets */,
+				A35EAF982E0FBB4800B995A4 /* Assets.xcassets */,
+				A35EAF9D2E0FBB4800B995A4 /* Models.swift */,
+				A35EAFA32E0FBB4800B995A4 /* ResearchSettingsView.swift */,
+				A35EAFA72E0FBB4800B995A4 /* UsageTimeTracker.swift */,
+				A35EAF9F2E0FBB4800B995A4 /* PhotoFetcher.swift */,
+				A35EAF9C2E0FBB4800B995A4 /* MainMenuView.swift */,
+				A35EAFA52E0FBB4800B995A4 /* SpeakingPracticeView.swift */,
+				A35EAF9E2E0FBB4800B995A4 /* Persistence.swift */,
+				A35EAFA42E0FBB4800B995A4 /* ServiceManager.swift */,
+				A35EAF9A2E0FBB4800B995A4 /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A38753DF2D7DDA9200F7E1C8 = {
+			isa = PBXGroup;
+			children = (
+				A38753EA2D7DDA9200F7E1C8 /* realingo_v3 */,
+				A38754002D7DDA9500F7E1C8 /* realingo_v3Tests */,
+				A387540A2D7DDA9500F7E1C8 /* realingo_v3UITests */,
+				A38754612D7F6C4200F7E1C8 /* Frameworks */,
+				A38753E92D7DDA9200F7E1C8 /* Products */,
+				A33987B72E108CD800EA8910 /* Recovered References */,
+				A36BE00F2E125424008B0498 /* realingo_v3.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A38753E92D7DDA9200F7E1C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38753E82D7DDA9200F7E1C8 /* realingo_v3.app */,
+				A38753FD2D7DDA9500F7E1C8 /* realingo_v3Tests.xctest */,
+				A38754072D7DDA9500F7E1C8 /* realingo_v3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A38754612D7F6C4200F7E1C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A36BE0072E1253A3008B0498 /* realingo_v3/Frameworks/llama.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A38753E72D7DDA9200F7E1C8 /* realingo_v3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38754112D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3" */;
+			buildPhases = (
+				A38753E42D7DDA9200F7E1C8 /* Sources */,
+				A38753E52D7DDA9200F7E1C8 /* Frameworks */,
+				A38753E62D7DDA9200F7E1C8 /* Resources */,
+				A36BE00A2E1253A4008B0498 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A38753EA2D7DDA9200F7E1C8 /* realingo_v3 */,
+			);
+			name = realingo_v3;
+			packageProductDependencies = (
+				A38754252D7E0CA100F7E1C8 /* FirebaseAnalytics */,
+				A38754272D7E0CA100F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */,
+				A38754292D7E0CA100F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				A387542B2D7E0CA100F7E1C8 /* FirebaseAppCheck */,
+				A387542D2D7E0CA100F7E1C8 /* FirebaseAppDistribution-Beta */,
+				A38754622D7F6C4200F7E1C8 /* FirebaseFirestore */,
+				A33988662E1093E400EA8910 /* FirebaseAuth */,
+				A38754642E1093E400EA8910 /* FirebaseStorage */,
+			);
+			productName = realingo_v3;
+			productReference = A38753E82D7DDA9200F7E1C8 /* realingo_v3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38753FC2D7DDA9500F7E1C8 /* realingo_v3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38754142D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3Tests" */;
+			buildPhases = (
+				A38753F92D7DDA9500F7E1C8 /* Sources */,
+				A38753FA2D7DDA9500F7E1C8 /* Frameworks */,
+				A38753FB2D7DDA9500F7E1C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A38753FF2D7DDA9500F7E1C8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A38754002D7DDA9500F7E1C8 /* realingo_v3Tests */,
+			);
+			name = realingo_v3Tests;
+			packageProductDependencies = (
+				A387542F2D7E0F1F00F7E1C8 /* FirebaseAnalytics */,
+				A38754312D7E0F1F00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */,
+				A38754332D7E0F1F00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				A38754352D7E0F1F00F7E1C8 /* FirebaseAppCheck */,
+				A38754372D7E0F1F00F7E1C8 /* FirebaseAppDistribution-Beta */,
+			);
+			productName = realingo_v3Tests;
+			productReference = A38753FD2D7DDA9500F7E1C8 /* realingo_v3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A38754062D7DDA9500F7E1C8 /* realingo_v3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38754172D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3UITests" */;
+			buildPhases = (
+				A38754032D7DDA9500F7E1C8 /* Sources */,
+				A38754042D7DDA9500F7E1C8 /* Frameworks */,
+				A38754052D7DDA9500F7E1C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A38754092D7DDA9500F7E1C8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A387540A2D7DDA9500F7E1C8 /* realingo_v3UITests */,
+			);
+			name = realingo_v3UITests;
+			packageProductDependencies = (
+				A38754392D7E0F3A00F7E1C8 /* FirebaseAnalytics */,
+				A387543B2D7E0F3A00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */,
+				A387543D2D7E0F3A00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				A387543F2D7E0F3A00F7E1C8 /* FirebaseAppCheck */,
+				A38754412D7E0F3A00F7E1C8 /* FirebaseAppDistribution-Beta */,
+			);
+			productName = realingo_v3UITests;
+			productReference = A38754072D7DDA9500F7E1C8 /* realingo_v3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38753E02D7DDA9200F7E1C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A38753E72D7DDA9200F7E1C8 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A38753FC2D7DDA9500F7E1C8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A38753E72D7DDA9200F7E1C8;
+					};
+					A38754062D7DDA9500F7E1C8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A38753E72D7DDA9200F7E1C8;
+					};
+				};
+			};
+			buildConfigurationList = A38753E32D7DDA9200F7E1C8 /* Build configuration list for PBXProject "realingo_v3" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38753DF2D7DDA9200F7E1C8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A38753E92D7DDA9200F7E1C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38753E72D7DDA9200F7E1C8 /* realingo_v3 */,
+				A38753FC2D7DDA9500F7E1C8 /* realingo_v3Tests */,
+				A38754062D7DDA9500F7E1C8 /* realingo_v3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A38753E62D7DDA9200F7E1C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36BE0102E125424008B0498 /* realingo_v3.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38753FB2D7DDA9500F7E1C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAFBA2E0FBB4800B995A4 /* GoogleService-Info.plist in Resources */,
+				A35EAFBB2E0FBB4800B995A4 /* Preview Assets.xcassets in Resources */,
+				A35EAFBC2E0FBB4800B995A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38754052D7DDA9500F7E1C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAFDE2E0FBB4800B995A4 /* GoogleService-Info.plist in Resources */,
+				A35EAFDF2E0FBB4800B995A4 /* Preview Assets.xcassets in Resources */,
+				A35EAFE02E0FBB4800B995A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A38753E42D7DDA9200F7E1C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE1C4488B6146569BFF24E7 /* VLM/VLMWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38753F92D7DDA9500F7E1C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAFAB2E0FBB4800B995A4 /* Models.swift in Sources */,
+				A35EAFAC2E0FBB4800B995A4 /* ResearchSettingsView.swift in Sources */,
+				A35EAFAD2E0FBB4800B995A4 /* UsageTimeTracker.swift in Sources */,
+				A35EAFAE2E0FBB4800B995A4 /* PhotoFetcher.swift in Sources */,
+				A35EAFAF2E0FBB4800B995A4 /* MainMenuView.swift in Sources */,
+				A35EAFB02E0FBB4800B995A4 /* SpeakingPracticeView.swift in Sources */,
+				A35EAFB12E0FBB4800B995A4 /* Persistence.swift in Sources */,
+				A35EAFB22E0FBB4800B995A4 /* ServiceManager.swift in Sources */,
+				A35EAFB32E0FBB4800B995A4 /* ContentView.swift in Sources */,
+				A35EAFB42E0FBB4800B995A4 /* LanguageSelectionView.swift in Sources */,
+				A35EAFB52E0FBB4800B995A4 /* Quiz.swift in Sources */,
+				A35EAFB62E0FBB4800B995A4 /* SpeechRecognitionManager.swift in Sources */,
+				A35EAFB72E0FBB4800B995A4 /* realingo_v3.xcdatamodeld in Sources */,
+				A35EAFB82E0FBB4800B995A4 /* WrapLayoutView.swift in Sources */,
+				A35EAFB92E0FBB4800B995A4 /* realingo_v3App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38754032D7DDA9500F7E1C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAFCF2E0FBB4800B995A4 /* Models.swift in Sources */,
+				A35EAFD02E0FBB4800B995A4 /* ResearchSettingsView.swift in Sources */,
+				A35EAFD12E0FBB4800B995A4 /* UsageTimeTracker.swift in Sources */,
+				A35EAFD22E0FBB4800B995A4 /* PhotoFetcher.swift in Sources */,
+				A35EAFD32E0FBB4800B995A4 /* MainMenuView.swift in Sources */,
+				A35EAFD42E0FBB4800B995A4 /* SpeakingPracticeView.swift in Sources */,
+				A35EAFD52E0FBB4800B995A4 /* Persistence.swift in Sources */,
+				A35EAFD62E0FBB4800B995A4 /* ServiceManager.swift in Sources */,
+				A35EAFD72E0FBB4800B995A4 /* ContentView.swift in Sources */,
+				A35EAFD82E0FBB4800B995A4 /* LanguageSelectionView.swift in Sources */,
+				A35EAFD92E0FBB4800B995A4 /* Quiz.swift in Sources */,
+				A35EAFDA2E0FBB4800B995A4 /* SpeechRecognitionManager.swift in Sources */,
+				A35EAFDB2E0FBB4800B995A4 /* realingo_v3.xcdatamodeld in Sources */,
+				A35EAFDC2E0FBB4800B995A4 /* WrapLayoutView.swift in Sources */,
+				A35EAFDD2E0FBB4800B995A4 /* realingo_v3App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A38753FF2D7DDA9500F7E1C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38753E72D7DDA9200F7E1C8 /* realingo_v3 */;
+			targetProxy = A38753FE2D7DDA9500F7E1C8 /* PBXContainerItemProxy */;
+		};
+		A38754092D7DDA9500F7E1C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38753E72D7DDA9200F7E1C8 /* realingo_v3 */;
+			targetProxy = A38754082D7DDA9500F7E1C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A387540F2D7DDA9500F7E1C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36BE00F2E125424008B0498 /* realingo_v3.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A38754102D7DDA9500F7E1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36BE00F2E125424008B0498 /* realingo_v3.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38754122D7DDA9500F7E1C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"realingo_v3/Preview Content\"";
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = realingo_v3/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38754132D7DDA9500F7E1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"realingo_v3/Preview Content\"";
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = realingo_v3/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A38754152D7DDA9500F7E1C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realingo_v3.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/realingo_v3";
+			};
+			name = Debug;
+		};
+		A38754162D7DDA9500F7E1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realingo_v3.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/realingo_v3";
+			};
+			name = Release;
+		};
+		A38754182D7DDA9500F7E1C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = realingo_v3;
+			};
+			name = Debug;
+		};
+		A38754192D7DDA9500F7E1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6626U3YMWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nawta.realingo-v3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = realingo_v3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38753E32D7DDA9200F7E1C8 /* Build configuration list for PBXProject "realingo_v3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A387540F2D7DDA9500F7E1C8 /* Debug */,
+				A38754102D7DDA9500F7E1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38754112D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38754122D7DDA9500F7E1C8 /* Debug */,
+				A38754132D7DDA9500F7E1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38754142D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38754152D7DDA9500F7E1C8 /* Debug */,
+				A38754162D7DDA9500F7E1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38754172D7DDA9500F7E1C8 /* Build configuration list for PBXNativeTarget "realingo_v3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38754182D7DDA9500F7E1C8 /* Debug */,
+				A38754192D7DDA9500F7E1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A33988662E1093E400EA8910 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A38754252D7E0CA100F7E1C8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A38754272D7E0CA100F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		A38754292D7E0CA100F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		A387542B2D7E0CA100F7E1C8 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A387542D2D7E0CA100F7E1C8 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		A387542F2D7E0F1F00F7E1C8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A38754312D7E0F1F00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		A38754332D7E0F1F00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		A38754352D7E0F1F00F7E1C8 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A38754372D7E0F1F00F7E1C8 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		A38754392D7E0F3A00F7E1C8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A387543B2D7E0F3A00F7E1C8 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		A387543D2D7E0F3A00F7E1C8 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		A387543F2D7E0F3A00F7E1C8 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A38754412D7E0F3A00F7E1C8 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		A38754622D7F6C4200F7E1C8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A38754642E1093E400EA8910 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38754242D7E0CA100F7E1C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A35EAFA12E0FBB4800B995A4 /* realingo_v3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A35EAFAA2E0FBB4800B995A4 /* realingo_v3.xcdatamodel */,
+			);
+			currentVersion = A35EAFAA2E0FBB4800B995A4 /* realingo_v3.xcdatamodel */;
+			path = realingo_v3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A38753E02D7DDA9200F7E1C8 /* Project object */;
+}
