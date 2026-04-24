@@ -2,6 +2,8 @@
 
 [![Zenn](https://img.shields.io/badge/zenn-d92ffc77b6761a-blue.svg?style=flat-square)](https://zenn.dev/naoto000/articles/d92ffc77b6761a)
 
+[![Audi R8](http://img.youtube.com/vi/Xf8SfKKQkfc/0.jpg)](https://www.youtube.com/watch?v=Xf8SfKKQkfc "Realingo PV")
+
 Realingo V3は、あなたの日常にある「リアル」なコンテキストを最大限に活用する、新しい形の言語学習アプリです。思い出の写真、今撮った風景、コミュニティの投稿など、すべてがあなただけの学習教材に変わります。
 
 ## ✨ 主な機能
